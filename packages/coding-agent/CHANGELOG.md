@@ -5,6 +5,7 @@
 ### Added
 
 - Added queueable compaction: `/compact` sent with the follow-up key (Ctrl+Q) while the agent works now runs when it yields instead of interrupting it ([#17397](https://github.com/can1357/oh-my-pi/pull/17397) by [@H4vC](https://github.com/H4vC))
+- Added removing a model from the recently used models in `/model`: press `Ctrl+D` on a recently used model. The model in use and models assigned to a role can't be removed. Using a removed model again puts it back ([#15461](https://github.com/can1357/oh-my-pi/pull/15461) by [@TheDiscoScript](https://github.com/TheDiscoScript))
 
 ### Fixed
 
@@ -997,8 +998,6 @@
 - Fails unstructured task runs that conclude without a final message
 - Background task cards no longer stop updating once the agent ends its turn while the task is still running
 - Transparent images the model receives (small icons, oversized screenshots) keep their transparency instead of turning into a black square, and resized edges no longer pick up a dark fringe
-- Added removing a model from the recently used models in `/model`: press `Ctrl+D` on a recently used model. The model in use and models assigned to a role can't be removed. Using a removed model again puts it back
-- Added removing a model from the recently used models in `/model`: press `Ctrl+D` on a recently used model. The model in use and models assigned to a role can't be removed. Using a removed model again puts it back ([#15461](https://github.com/can1357/oh-my-pi/pull/15461) by [@TheDiscoScript](https://github.com/TheDiscoScript))
 
 ## [18.10.1] - 2026-10-12
 
